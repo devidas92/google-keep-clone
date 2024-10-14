@@ -13,7 +13,7 @@ const { validateEntityID, validateBody } = require("../utils/validateRoute");
 const authTokenValidator = require("../utils/authTokenValidator");
 const authorize = require("../utils/authorization");
 
-// Retrive All notes by userId
+// Retrive All labels by userId
 router.get("/", authTokenValidator, authorize(["user"]), getAllLabelsByUserId);
 
 router.get(

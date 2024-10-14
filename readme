@@ -34,7 +34,7 @@ Follow these steps to get the project up and running locally:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/google-keep-clone.git
+   git clone https://github.com/devidas92/google-keep-clone.git
 
    ```
 
@@ -45,7 +45,7 @@ Follow these steps to get the project up and running locally:
    npm install
 
 1. **Create .env file:**
-   Set up your environment variables in a .env file following the example in the env.js file.
+   Set up your environment variables in a .env file
 
 1. **Run the Server:**
    npm start
@@ -54,6 +54,28 @@ Follow these steps to get the project up and running locally:
 
 📊 API Endpoints
 Here’s a quick guide to the API endpoints available in the project:
+
+**Register:**
+
+- To register an user
+
+```
+POST /api/auth/register
+```
+
+**Login:**
+
+- To Login an retrieve the auth token
+
+```
+POST /api/auth/login
+```
+
+---
+
+> **Note:** The authentication token generated during the login process must be included in the **Authorization** header of each API request listed below.
+
+---
 
 **Notes:**
 
@@ -83,22 +105,10 @@ POST /api/notes
 
 **Reminders:**
 
-- Add a reminder to a note
+- Get all reminders
 
 ```
-  POST /api/notes/:id/reminder
-```
-
-- Update a reminder
-
-```
-  PUT /api/notes/:id/reminder
-```
-
-- Delete a reminder
-
-```
-  DELETE /api/notes/:id/reminder
+  GET /api/reminders
 ```
 
 **Labels:**
@@ -106,16 +116,26 @@ POST /api/notes
 - Add a label to a note
 
 ```
-  POST /api/notes/:id/label
+  POST /api/label
 ```
 
 - Get all labels
 
 ```
-  GET /api/labels
+  GET /api/label
 ```
 
----
+- Update a label
+
+```
+  PUT /api/label/:id
+```
+
+- Delete a label
+
+```
+  DELETE /api/label/:id
+```
 
 ## 🔧 Configuration
 
@@ -123,23 +143,8 @@ Ensure you properly configure your environment variables in the .env file. Below
 
 ```bash
 
-     PORT=3000
+     PORT=5000
      NODE_ENV=development
-     DB_FILE=./data.json
 ```
 
 ---
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to:
-
-- Fork the repository
-- Submit pull requests \*\* for improvements or new features.
-- Open issues for bugs or feature requests.
-
----
-
-## 📜 License
-
-This project is licensed under the MIT License. See the LICENSE file for more details.
