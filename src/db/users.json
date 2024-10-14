@@ -1,0 +1,23 @@
+[
+  {
+    "username": "ram",
+    "password": "$2b$10$ONELWOh1rH8vtp3PQA6IE.fbXE80xT.MzVVHuNYdCEqhha9y.nVl6",
+    "role": "user",
+    "id": 1,
+    "createdAt": "2024-10-08T14:17:13.405Z"
+  },
+  {
+    "username": "manu",
+    "password": "$2b$10$PgTpAOpItivPdbOJxp5H5OYZ6XaWWdrR55ZI7MHlLPU6rCCBsMNOe",
+    "id": 2,
+    "role": "user",
+    "createdAt": "2024-10-08T14:17:53.192Z"
+  },
+  {
+    "username": "janaki",
+    "password": "$2b$10$00EZUBllglQvfCUPt1pme.CUmn8I5ybrQ7NjiixAs7G3wzZHSFtYe",
+    "role": "user",
+    "id": 3,
+    "createdAt": "2024-10-08T14:57:08.140Z"
+  }
+]

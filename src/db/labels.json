@@ -1,0 +1,20 @@
+[
+  {
+    "labelName": "ok",
+    "userId": 3,
+    "id": 1,
+    "createdAt": "2024-10-11T10:08:56.147Z"
+  },
+  {
+    "labelName": "new",
+    "userId": 3,
+    "id": 2,
+    "createdAt": "2024-10-11T14:26:00.604Z"
+  },
+  {
+    "labelName": "worst",
+    "userId": 3,
+    "id": 3,
+    "createdAt": "2024-10-11T10:09:01.797Z"
+  }
+]

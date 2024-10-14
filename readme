@@ -1,0 +1,145 @@
+# 📝 Google Keep Clone - Backend
+
+## 🖥️ Overview
+
+This project is a backend implementation of a **Google Keep** clone. It replicates key features like **reminders**, **notes**, **labels**, and complete **CRUD** (Create, Read, Update, Delete) operations. The project is built with **Node.js** and **Express**, using a simple JSON file to simulate a database.
+
+---
+
+## 🚀 Features
+
+- **CRUD Operations**: Seamlessly create, read, update, and delete notes, reminders, and labels.
+- **Reminders**: Set and manage reminders for your notes.
+- **Labels**: Organize notes with labels for easy filtering and search.
+- **Environment Configuration**: Easily manage environment variables.
+- **Clean Folder Structure**: Modular code architecture with distinct roles for routes, controllers, services, and utilities.
+
+---
+
+## 🛠️ Prerequisites
+
+Before you start, ensure you have:
+
+- **[Node.js](https://nodejs.org/)** (v14 or higher)
+- **[Express.js](https://expressjs.com/)**
+
+Basic understanding of **CRUD operations** and **REST APIs** is helpful.
+
+---
+
+## ⚙️ Installation
+
+Follow these steps to get the project up and running locally:
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/your-username/google-keep-clone.git
+
+   ```
+
+1. **Navigate to project directory:**
+   cd google-keep-clone
+
+1. **Install dependencies:**
+   npm install
+
+1. **Create .env file:**
+   Set up your environment variables in a .env file following the example in the env.js file.
+
+1. **Run the Server:**
+   npm start
+
+---
+
+📊 API Endpoints
+Here’s a quick guide to the API endpoints available in the project:
+
+**Notes:**
+
+- Create a new note
+
+```
+POST /api/notes
+```
+
+- Get all notes
+
+```
+  GET /api/notes
+```
+
+- Update a note
+
+```
+  PUT /api/notes/:id
+```
+
+- Delete a note
+
+```
+  DELETE /api/notes/:id
+```
+
+**Reminders:**
+
+- Add a reminder to a note
+
+```
+  POST /api/notes/:id/reminder
+```
+
+- Update a reminder
+
+```
+  PUT /api/notes/:id/reminder
+```
+
+- Delete a reminder
+
+```
+  DELETE /api/notes/:id/reminder
+```
+
+**Labels:**
+
+- Add a label to a note
+
+```
+  POST /api/notes/:id/label
+```
+
+- Get all labels
+
+```
+  GET /api/labels
+```
+
+---
+
+## 🔧 Configuration
+
+Ensure you properly configure your environment variables in the .env file. Below is an example:
+
+```bash
+
+     PORT=3000
+     NODE_ENV=development
+     DB_FILE=./data.json
+```
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to:
+
+- Fork the repository
+- Submit pull requests \*\* for improvements or new features.
+- Open issues for bugs or feature requests.
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License. See the LICENSE file for more details.
